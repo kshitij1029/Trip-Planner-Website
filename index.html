@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style type="text/css">
+        html{
+            scroll-behavior:smooth;
+        }
+    </style>
+</head>
+<body>
+    <section id="Homepage">
+        <header>
+            <div id="navbar">
+                <div id="logo">
+                    <a href="#Homepage"><img  id="logopic" src="Images/Gemini_Generated_Image_yxolujyxolujyxol.png" height="100px" width="100px"></a>
+                    <h1 style="font-size: 40px; color: rgb(58, 38, 24); margin: 0;">Tour</h1><h1 style="font-size: 40px; color: rgb(134, 102, 75); margin: 0;">fly</h1>
+                </div>
+                <div id="pageButtons">
+                    <a href="#Homepage"><button class="button">Homepage</button></a>
+                    <a href="#AboutUs"><button class="button">About Us</button></a>
+                    <a href="#Track"><button class="button">Track</button></a>
+                    <a href="#ContactUs"><button class="button">Contact Us</button></a>
+                </div>
+            </div>
+        </header>
+        <div id="content-1">
+            <div style="margin:0 0 25px 0; font-size: 50px; width: 680px; color: rgb(58, 38, 24);"><b>Track Your Wanderlust: The Ultimate Tourist Spot Tracker</b></div>
+            <div style="width:550px; font-size: 17px; color:rgb(19, 46, 80); margin-bottom: 32px;">Never lose sight of your travel dreams again. Our platform is designed for the modern explorer, helping you meticulously record every monument, museum, and hidden gem you've visited across the globe.</div>
+            <a href="#Track"><button id="explore">Explore</button></a>
+        </div>
+    </section>
+    <section id="AboutUs">
+        <div id="content-2">
+            <div id="img">
+                <img src="Images/about us -01.jpg" height="380px" width="380px" style="border-radius: 20px;">
+            </div>
+            <div id="about">
+                <h1 style="font-size: 45px; color: burlywood;">Knowing About Us</h1>
+                <p style="font-size: 17px; line-height: 30px; color:white">Welcome to your ultimate trip planning companion, designed to transform your travel dreams into detailed, exciting itineraries. We take the guesswork out of discovery by providing a rich, single source for all your needs. Explore stunning, high-resolution pictures that capture the essence of each location, get precise map data and essential travel details, and always stay prepared with real-time weather updates. Our expertly crafted descriptions offer historical context and insider tips, ensuring you have a complete understanding of the places you'll visit.</p>
+                <p style="font-size: 20px; color:rgb(178, 142, 112); font-style: italic;"> Stop wondering and start exploring with confidence—your perfect itinerary begins right here.</p>
+             </div>
+        </div>
+        <br>
+        <div id="content-3">
+            <div class="group">
+                <div class="class1" style="text-align: center;">
+                <div class="class2">
+                    <img src="Images/review-1.jpg" height="80px" width="78px" style="border-radius: 50%; margin-top: 12px;">
+                    <h3 style="margin-top: 8px; color:rgb(111, 47, 18)">Kelly Bekshaw</h3>
+                </div>
+                <i class="fa-solid fa-quote-left" style="color:rgb(111, 47, 18);"></i>
+                <i style="font-size: 13px; margin-left: 4px; color:rgb(37, 22, 11)">Tourfly saved our vacation! We used it extensively beforehand to discover hidden gems we never knew existed. The detailed descriptions and weather updates meant zero surprises. Our family felt prepared and excited for every stop. A flawless planning tool!</i>
+                </div>
+                <div class="class1" style="text-align: center;">
+                    <div class="class2">
+                        <img src="Images/review-2.jpg" height="80px" width="78px" style="border-radius: 50%; margin-top: 12px;">
+                        <h3 style="margin-top: 8px; color:rgb(111, 47, 18)">Mike Stevenson</h3>
+                    </div>
+                    <i class="fa-solid fa-quote-left" style="color:rgb(111, 47, 18);"></i>
+                    <i style="font-size: 13px; margin-left: 4px; color:rgb(37, 22, 11)">Finding kid-friendly locations was so easy thanks to Tourfly. We planned our entire road trip months out, ensuring everything was perfect. The clear photos and location info made checking off our family bucket list so satisfying. Highly recommend for stress-free trips!</i>
+                </div>
+                <div class="class1" style="text-align: center;">
+                    <div class="class2">
+                        <img src="Images/review-3.jpg" height="80px" width="78px" style="border-radius: 50%; margin-top: 12px;">
+                        <h3 style="margin-top: 8px; color:rgb(111, 47, 18)">Laura Spike</h3>
+                    </div>
+                    <i class="fa-solid fa-quote-left" style="color:rgb(111, 47, 18);"></i>
+                    <i style="font-size: 13px; margin-left: 4px; color:rgb(37, 22, 11)">I love how intuitive the search is. Tourfly helped me find new, unique spots that weren't in any guidebook. My whole family had a blast experiencing fresh destinations. The prep work felt fun, not like homework. Tourfly is our new go-to!</i>
+                </div>
+                <div class="class1" style="text-align: center;">
+                    <div class="class2">
+                        <img src="Images/review-4.jpg" height="80px" width="78px" style="border-radius: 50%; margin-top: 12px;">
+                        <h3 style="margin-top: 8px; color:rgb(111, 47, 18)">Prabhakar Mishra</h3>
+                    </div>
+                    <i class="fa-solid fa-quote-left" style="color:rgb(111, 47, 18);"></i>
+                    <i style="font-size: 13px; margin-left: 4px; color:rgb(37, 22, 11)">With Tourfly, we felt incredibly confident leaving the house. Knowing the weather, location, and a great description meant we maximized every day. It truly enhanced our family adventure, turning simple trips into memorable expeditions. Five stars!</i>
+                </div>
+                
+            </div>
+            <div  aria-hidden class="group">
+                <div class="class1" style="text-align: center;">
+                <div class="class2">
+                    <img src="Images/review-1.jpg" height="80px" width="78px" style="border-radius: 50%; margin-top: 12px;">
+                    <h3 style="margin-top: 8px; color:rgb(111, 47, 18)">Kelly Bekshaw</h3>
+                </div>
+                <i class="fa-solid fa-quote-left" style="color:rgb(111, 47, 18);"></i>
+                <i style="font-size: 13px; margin-left: 4px; color:rgb(37, 22, 11)">Tourfly saved our vacation! We used it extensively beforehand to discover hidden gems we never knew existed. The detailed descriptions and weather updates meant zero surprises. Our family felt prepared and excited for every stop. A flawless planning tool!</i>
+                </div>
+                <div class="class1" style="text-align: center;">
+                    <div class="class2">
+                        <img src="Images/review-2.jpg" height="80px" width="78px" style="border-radius: 50%; margin-top: 12px;">
+                        <h3 style="margin-top: 8px; color:rgb(111, 47, 18)">Mike Stevenson</h3>
+                    </div>
+                    <i class="fa-solid fa-quote-left" style="color:rgb(111, 47, 18);"></i>
+                    <i style="font-size: 13px; margin-left: 4px; color:rgb(37, 22, 11)">Finding kid-friendly locations was so easy thanks to Tourfly. We planned our entire road trip months out, ensuring everything was perfect. The clear photos and location info made checking off our family bucket list so satisfying. Highly recommend for stress-free trips!</i>
+                </div>
+                <div class="class1" style="text-align: center;">
+                    <div class="class2">
+                        <img src="Images/review-3.jpg" height="80px" width="78px" style="border-radius: 50%; margin-top: 12px;">
+                        <h3 style="margin-top: 8px; color:rgb(111, 47, 18)">Laura Spike</h3>
+                    </div>
+                    <i class="fa-solid fa-quote-left" style="color:rgb(111, 47, 18);"></i>
+                    <i style="font-size: 13px; margin-left: 4px; color:rgb(37, 22, 11)">I love how intuitive the search is. Tourfly helped me find new, unique spots that weren't in any guidebook. My whole family had a blast experiencing fresh destinations. The prep work felt fun, not like homework. Tourfly is our new go-to!</i>
+                </div>
+                <div class="class1" style="text-align: center;">
+                    <div class="class2">
+                        <img src="Images/review-4.jpg" height="80px" width="78px" style="border-radius: 50%; margin-top: 12px;">
+                        <h3 style="margin-top: 8px; color:rgb(111, 47, 18)">Prabhakar Mishra</h3>
+                    </div>
+                    <i class="fa-solid fa-quote-left" style="color:rgb(111, 47, 18);"></i>
+                    <i style="font-size: 13px; margin-left: 4px; color:rgb(37, 22, 11)">With Tourfly, we felt incredibly confident leaving the house. Knowing the weather, location, and a great description meant we maximized every day. It truly enhanced our family adventure, turning simple trips into memorable expeditions. Five stars!</i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Track">
+        <!-- <h1 style="margin: 13px 0px 20px 560px; color:rgb(131, 93, 63); font-size: 30px; display: inline-block;" >Plan your Trip</h1> -->
+        <div id="content-5">
+            <div id="apiImage">
+               
+            </div>
+            <div id="apiDetails">
+                <div id="apiInput">
+                        <input type="text" id="askplace" placeholder=" Search For Places (eg: London)">
+                        <button id="submitplace" style="width:100px;">+</button>
+                </div>
+                <div id="apiInfo">
+                    <div id="basic">
+                        <div id="weather" class="same" style="margin-left: 15px; width:510px; box-shadow: 2px 2px 5px rgb(147, 101, 54);">
+                            <h1 style="color:rgb(104, 70, 46); margin-top: 10px; margin-bottom: 7px;">Weather</h1>
+                            <div id="weatherinfo">
+                                
+                            </div>
+                        </div>
+                        <div id="location" class="same" style="margin-left: 15px; box-shadow: 2px 2px 5px rgb(147, 101, 54);">
+                            <h1 style="color:rgb(104, 70, 46); margin-top: 10px;">Location</h1>
+                            <div id="locationinfo" style="color: rgb(67, 33, 18);">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="description">
+                        <div id="text">
+                            <h1 style="color:rgb(104, 70, 46); margin-top: 10px;">Description</h1>
+                            <div id="text1" style="width:480px; margin:0 auto; line-height: 26px; color: rgb(67, 33, 18);">
+
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ContactUs">
+        <div id="content-4">
+            <img src="Images/contactus.png" style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+            <div id="details">
+                <div id="contacthead">
+                    <i style="font-size: 40px; color:rgb(93, 58, 33); margin-top: 20px; margin-right: 5px;" class="fa-solid fa-user"></i>
+                    <h1 style="font-size: 40px; margin-bottom: 15px; margin-top: 20px; color:rgb(37, 22, 11);">Get In Touch</h1>
+                </div>
+                <div id="contactForm">
+                    <form id="forming">
+                        <input class="input-2" type="text" placeholder="Enter your Name" style="margin-top:15px;">
+                        <br>
+                        <input class="input-2" type="text" placeholder="Enter your Email">
+                        <br>
+                        <textarea class="input-2" style="height: 140px; padding: 10px 0 0 10px;" placeholder="Enter your Message"></textarea>
+                        <br>
+                        <input type="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div id="foot">
+            <h1 style="font-size: 40px; color: rgb(223, 171, 134); margin: 0; display: inline;">Tour</h1><h1 style="font-size: 40px; color: rgb(232, 227, 223); margin: 0; display: inline;">fly</h1>
+            <p>Email: connect.kshitijjha@gmail.com</p>
+            <p>Ph-no: (+91) 9773997258</p>
+            <p style="margin-bottom: 5px;">2025 | Tour.Track@ your Trip | All rights reserved</p>
+            <div id="options">
+                <a href="#Homepage" style="text-decoration: none"><span class="options1">Homepage |</span></a>
+                <a href="#AboutUs" style="text-decoration: none;"><span class="options1">About Us |</span></a>
+                <a href="#Track" style="text-decoration: none;"><span class="options1">Track |</span></a>
+                <a href="#ContactUs" style="text-decoration: none;"><span class="options1">Contact</span></a>
+            </div>
+            <div id="footericons">
+                <a href="https://www.linkedin.com/in/kshitij-jha-a1b19b327" style="text-decoration: none; color: rgb(223, 171, 134)"><div class="footicon"><i class="fa-brands fa-linkedin"></i></div ></a>
+                <a href="https://github.com/kshitij1029?tab=repositories" style="text-decoration: none; color: rgb(223, 171, 134)"><div class="footicon"><i class="fa-brands fa-github"></i></div ></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrjmnjJcQRXrmlSVszpctPDcLhlHHWjbvXmDsQrPLQfKLQkskHrbzpVjcLPxNxGBFkxJMg" style="text-decoration: none; color: rgb(223, 171, 134)"><div class="footicon"><i class="fa-brands fa-google"></i></div ></a>
+                <a style="text-decoration: none; color:rgb(223, 171, 134)"><div class="footicon"><i class="fa-brands fa-instagram"></i></div ></a>
+            </div>
+        </div>
+    </footer>
+    <div id="popup">
+            <i class="fa-solid fa-circle-check" style="font-size: 90px; color: rgb(104, 70, 46); margin-top: 35px;"></i>
+            <h1 style="color:rgb(37, 22, 11); margin-bottom:10px;">Thanks For Contacting!</h1>
+            <h3 style="color:rgb(37, 22, 11); margin-bottom: 25px;">Your query will be handled shortly...</h3>
+            <button id="cancel"><b>OK</b></button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

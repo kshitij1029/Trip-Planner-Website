@@ -1,0 +1,518 @@
+#Homepage{
+    position: fixed;
+    background-image: url("https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg");
+    background-size: cover;
+    height:100vh;
+    position: relative;
+    width:1513px;
+    right:10px;
+    bottom:10px;
+    display: block;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+#logopic:hover{
+    cursor: pointer;
+}
+#pageButtons{
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    width:550px;
+}
+.button{
+    height:50px;
+    width:100px;
+    border-radius: 20px;
+    border:0;
+    color: rgb(78, 37, 20);
+    background-color: rgb(190, 180, 167, 0.2);
+    box-shadow: 2px 2px 5px rgb(147, 101, 54);
+}
+.button:hover{
+    box-shadow: 0 0 7px rgb(147, 101, 54);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+#explore{
+    width: 280px; color:white; background-color: rgb(78, 37, 20);
+    height:50px;
+    border-radius: 20px;
+    border:0;
+    box-shadow: 1px 1px 8px rgb(217, 174, 131);
+}
+#explore:hover{
+    cursor: pointer;
+}
+#content-1{
+    margin:5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width:700px;
+    height:350px;
+    border-radius: 20px;
+}
+
+#content-2{
+    height: 400px;
+    width:1430px;
+    margin:0 auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(147, 101, 54);
+    display: flex;
+    background-color: rgb(64, 34, 20);
+}
+#img{
+    height:400px;
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+#about{
+    width:900px;
+}
+#content-3{
+    width:1500px;
+    height: 252px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:0 auto;
+    overflow-x: hidden;
+}
+
+.group{
+    display: flex;
+    gap:1.5em;
+    animation: spin 15s linear infinite;
+    padding-right: 1.5em;
+}
+.class1{
+    height: 240px;
+    width: 350px;
+    box-shadow: 2px 2px 15px rgb(64, 34, 20);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.class2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa-solid fa-quote-left{
+    font-size: 10px;
+}
+@keyframes spin{
+    from{translate:0;}
+    to{translate: -100%;}
+}
+#popup{
+    height:300px;
+    width:400px;
+    border-radius: 10px;
+    margin:0 auto;
+    z-index: 3;
+    text-align: center;
+    padding: 0 30px 30px;
+    position: absolute;
+    top:2200px;
+    left:550px;
+    box-shadow: 0 0 15px rgb(64, 34, 20);
+    background-color: white;
+    display: none;
+}
+#popup button{
+    height: 50px;
+    width:200px;
+    background-color: rgb(67, 33, 18);
+    outline: 0;
+    border: 0;
+    box-shadow: 2px 2px 10px rgb(239, 209, 178);
+    border-radius: 20px;
+    color:rgb(239, 209, 178);
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#popup button:hover{
+    cursor: pointer;
+    box-shadow: px 0px 10px rgb(239, 209, 178);
+    transform: scale(0.9);
+
+}
+#Track{
+    height: 723px;
+    margin-bottom: 10px; 
+}
+#content-5{
+    height: 640px;
+    width:1480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#apiImage{
+    height:650px;
+    width: 500px;
+    border-radius: 20px;
+}
+#apiDetails{
+    height:650px;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#apiInput{
+    height:70px;
+    width: 950px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#askplace{
+    height:50px;
+    width:780px;
+    outline:none;
+    border: 0;
+    box-shadow: 2px 2px 5px rgb(147, 101, 54);
+    border-radius: 20px;
+    padding-left: 10px;
+    color:rgb(78, 37, 20);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+}
+#submitplace{
+    color:rgb(78, 37, 20);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    height:50px;
+    width: 70px;
+    outline:0;
+    border:0;
+    border-radius: 40px;
+    margin-left: 20px;
+    background-color: rgb(190, 180, 167, 0.2);
+    box-shadow: 2px 2px 5px rgb(147, 101, 54);
+}
+#submitplace:hover{
+    box-shadow: 0 0 7px rgb(147, 101, 54);
+    transform: scale(0.9);
+    cursor:pointer;
+}
+#apiInfo{
+    height:580px;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#basic{
+    height:200px;
+    width: 950px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.same{
+    height:200px;
+    width: 390px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(230, 221, 212);
+}
+@keyframes anime{
+    0% {opacity:0}
+    /* 50%{opacity: 0.5} */
+    100%{opacity: 1}
+}
+#description{
+    height:370px;
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text{
+    height:350px;
+    width: 520px;
+    box-shadow: 2px 2px 5px rgb(147, 101, 54);
+    border-bottom-left-radius:20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    background-color: rgb(230, 221, 212);
+}
+#map{
+    height:350px;
+    width: 400px;
+    box-shadow: 2px 2px 5px rgb(147, 101, 54);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#ContactUs{
+    height: 723px;
+}
+#content-4{
+    height:500px;
+    width: 1030px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(147, 101, 54);
+    display:flex;
+    position: absolute;
+    top:2060px;
+    left:250px;
+    margin-top: 27px;
+}
+#details{
+    width:800px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+#contacthead{
+    display: flex;
+}
+#contactForm{
+    background-color: #382214;
+    border-radius: 20px;
+    height:405px;
+    width: 480px;
+    padding-left: 20px;
+}
+.formtags{
+    color:white;
+}
+.input-2{
+    color:rgb(78, 37, 20);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left:10px;
+    height:50px;
+    width: 450px;
+    outline:0;
+    border:0;
+    margin-bottom: 23px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(217, 174, 131);
+}
+#submit{
+    color:rgb(78, 37, 20);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    height:50px;
+    width: 350px;
+    outline:0;
+    border:0;
+    border-radius: 40px;
+    margin-left: 52px;
+    background-color: rgb(240, 230, 225);
+    box-shadow: 0 0 5px rgb(217, 174, 131);
+}
+#submit:hover{
+    cursor: pointer;
+}
+footer{
+    height: 285px;
+    background-color: rgb(67, 33, 18);
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 2645px;
+}
+#foot{
+    text-align: center;
+    margin-top: 7px;
+    color:white;
+}
+#footericons{
+    color: rgb(217, 174, 131);
+    display:inline-flex;
+    font-size: 30px;
+    height: 70px;
+    width: 220px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    border: 1px solid rgb(167, 125, 83);
+}
+
+.footicon:hover{
+    box-shadow: 0 0 10px rgb(164, 243, 164);
+    background-color: rgb(147, 101, 54);
+    color: white;
+    transform:scale(1.03);
+    cursor: pointer;
+}
+#options{
+    height:35px;
+    width:300px;
+    display:flex;
+    justify-content: space-around;
+    margin:0 auto;
+    margin-top: 20px;
+}
+.options1{
+    color:rgb(239, 209, 178);
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* Wrapper for the whole gallery area */
+.gallery-wrapper {
+    max-width: 45%;
+    margin-top: 20px;
+    height: 100vh;
+}
+
+/* The main, large image display */
+#main-image-display {
+    width: 500px;
+    height: 500px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image fills the space without stretching */
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgb(67, 33, 18);
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Container for arrows and thumbnails */
+.thumbnail-nav-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+    width: 500px;
+}
+
+/* The actual scrollable area for thumbnails */
+.thumbnail-scroll-container {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    scroll-behavior: smooth; /* Makes arrow clicks scroll smoothly */
+    gap: 10px;
+    padding: 5px 0;
+    /* Hide scrollbars for a cleaner look */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+/* Hide scrollbar for Chrome/Safari/Opera */
+.thumbnail-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual thumbnail images */
+.thumb-img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    flex-shrink: 0; /* Prevents thumbnails from squishing */
+}
+
+/* Hover state and 'active' state for the selected image */
+.thumb-img:hover, .thumb-img.active-thumb {
+    opacity: 1;
+    border: 3px solid #007bff; /* Blue border for active state */
+    transform: scale(1.05);
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #555;
+    padding: 0 10px;
+    user-select: none; /* Prevents highlighting the arrow text */
+    z-index: 2;
+}
+
+.nav-arrow:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+
+#weatherinfo{
+    display: flex;
+    align-items: center;
+    height:120px;
+}
+
+
+#weatherinfo h2{
+    margin-bottom: 0px;
+}
+#weatherinfo img{
+    height:60px;
+    width:60px;
+}
+#weatherinfo p{
+    margin: 0.5rem 0;
+    font-size: 15px;
+}
+.error-message {
+    color: #ff0800;
+    font-weight: bold;
+    
+}
+
+#weatherinfo>div{  
+    height: 140px;
+    width:230px;
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+.vertical1{
+    width:100px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+    color: rgb(67, 33, 18);
+}
+#temp{
+    display: flex;
+    flex-direction: row;
+}
+#weatherinfo div:nth-of-type(2){
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#weatherinfo div:nth-of-type(2) img{
+    height: 19px;
+    width: 17.61px;
+}
